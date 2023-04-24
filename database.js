@@ -18,15 +18,16 @@ database
     console.error(err);
   });
 
-// database
-//   .query("select * from movies")
-//   .then((result) => {
-//     const movies = result[0];
-//     console.log(movies);
-//   })
-//   .catch((err) => {
-//     console.error(err);
-//   });
+database
+  .query("select * from movies")
+  .then((result) => {
+    const movies = result[0];
+    console.log(movies);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
 database
   .query("select * from users")
   .then((result) => {
